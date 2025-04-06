@@ -1,0 +1,26 @@
+services:
+  eth-node1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eth-node1
+    ports:
+      - 8545:8545
+      - 30303:30303
+    volumes:
+      - node1_data:/data
+
+  eth-node2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eth-node2
+    ports:
+      - 8546:8546
+      - 30304:30304
+    volumes:
+      - node2_data:/data
+
+volumes:
+  node1_data:
+  node2_data:
