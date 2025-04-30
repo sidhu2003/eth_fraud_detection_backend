@@ -5,7 +5,7 @@ from rest_framework.response import Response
 def check_transaction(request):
     receiver_wallet = request.data.get('receiver_wallet')
 
-    if receiver_wallet.startswith('0xScam'):
+    if receiver_wallet.startswith('0x423'):
         return Response({
             "status": "blocked",
             "message": "Fraudulent Wallet Detected!",

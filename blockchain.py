@@ -1,11 +1,11 @@
 from web3 import Web3
 
 # Connect to local Ethereum node (Docker)
-WEB3_PROVIDER = "http://127.0.0.1:8545"  # Update with sender node URL
+WEB3_PROVIDER = "http://98.130.60.207:8545"  # Update with sender node URL
 web3 = Web3(Web3.HTTPProvider(WEB3_PROVIDER))
 
 # Contract details
-CONTRACT_ADDRESS = "0xYourDeployedContractAddress"  # Replace with your deployed contract address
+CONTRACT_ADDRESS = "0x14c3D8Eea50B1A5EC14259A716bE1b769EbA752d"  # Replace with your deployed contract address
 CONTRACT_ABI = [
     {
         "constant": True,
